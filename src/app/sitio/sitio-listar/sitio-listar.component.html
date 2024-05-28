@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="container text-center" style="margin: 30px;">
+        <h3> Listar Sitios</h3>
+    </div>
+   
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">descripción</th>
+            <th scope="col">Url</th>
+            <th scope="col">ruta</th>
+            <th scope="col">plantilla</th>
+            <th scope="col">Activo</th>
+            <th scope="col">Fecha Inicio</th>
+            <th scope="col">Fecha Cierre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let lista of listasitio">
+            <th scope="row"> {{lista.idSitio}} </th>
+            <td>{{lista.nombre}}</td>
+            <td>{{lista.descripcion}}</td>
+            <td>{{lista.url}}</td>
+            <td>{{lista.ruta}}</td>
+            <td>{{lista.plantilla}}</td>
+            <td>{{lista.activo}}</td>
+            <td>{{lista.fechaInicio}}</td>
+            <td>{{lista.fechaCierre}}</td>
+        
+          </tr>
+          
+        </tbody>
+      </table>
+  </div>

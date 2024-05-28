@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="container text-center" style="margin: 30px;">
+        <h3> Listar Sitios</h3>
+    </div>
+   
+    <table class="table table-striped table-hover align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">descripción</th>
+            <th scope="col">Url Página</th>
+         
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let lista of listaPaginas">
+            <th scope="row"> {{lista.idSiti}} </th>
+            <td>{{lista.nombre}}</td>
+            <td>{{lista.descripcion}}</td>
+            <td>{{lista.urlPagina}}</td>
+         
+          </tr>
+          
+        </tbody>
+      </table>
+  </div>
+
