@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Listarsitio } from '../../models/listarsitio';
+import { Sitio } from '../../models/sitio';
 import { ListsitioService } from '../../services/listsitio.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ListsitioService } from '../../services/listsitio.service';
   styleUrl: './sitio-listar.component.css'
 })
 export class SitioListarComponent{
-    listasitio:Listarsitio[];
+    listasitio:Sitio[];
     constructor(private listarsitioServicio: ListsitioService){
 
     }                

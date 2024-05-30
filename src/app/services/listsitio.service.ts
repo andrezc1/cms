@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Listarsitio } from '../models/listarsitio';
+import { Sitio } from '../models/sitio';
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +12,13 @@ export class ListsitioService {
   constructor(private clienteHttp:HttpClient) {
     
   }
-  obtenerlistasitios():Observable<Listarsitio[]>{
-    return this.clienteHttp.get<Listarsitio[]>(this.UrlBase +"sitios" );
+  obtenerlistasitios():Observable<Sitio[]>{
+    return this.clienteHttp.get<Sitio[]>(this.UrlBase +"sitios" );
   }
-  Agregarsitio(sitio:Listarsitio):Observable<Object>{
+  Agregarsitio(sitio:Sitio):Observable<Object>{
     return this.clienteHttp.post(this.UrlBase +"sitios",sitio);
   
+    
 
   }
 }

@@ -1,7 +1,7 @@
 <div class="container">
   <div class="container text-center" style="margin: 30px">
     Agregar Sitio</div>
-  <form (ngsubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()">
     <div class="mb-3">
       <label for="nombre" class="form-label">Nombre</label>
       <input type="text" class="form-control" id="nombre" name="nombre"  [(ngModel)]="crearsitio.nombre"/>
@@ -38,3 +38,4 @@
     </div>
   </form>
 </div>
+

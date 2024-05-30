@@ -1,5 +1,5 @@
 export class Paginas{
-     idSiti:number;
+     idSitio:number;
      nombre:string;
      descripcion:string;
      urlPagina:string;

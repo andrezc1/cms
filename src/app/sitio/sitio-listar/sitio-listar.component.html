@@ -25,9 +25,9 @@
             <td>{{lista.url}}</td>
             <td>{{lista.ruta}}</td>
             <td>{{lista.plantilla}}</td>
-            <td>{{lista.activo}}</td>
-            <td>{{lista.fechaInicio}}</td>
-            <td>{{lista.fechaCierre}}</td>
+            <td>{{lista.activo?'Si':'No'}}</td>
+            <td>{{lista.fechaInicio | date: 'dd-MM-yyyy'}}</td>
+            <td>{{lista.fechaCierre | date: 'dd-MM-yyyy'}}</td>
         
           </tr>
           

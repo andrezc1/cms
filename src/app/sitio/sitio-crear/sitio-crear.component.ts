@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Listarsitio } from '../../models/listarsitio';
+import { Sitio } from '../../models/sitio';
 import { ListsitioService } from '../../services/listsitio.service';
 import { Router } from '@angular/router';
 
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './sitio-crear.component.css',
 })
 export class SitioCrearComponent {
-  crearsitio: Listarsitio = new Listarsitio();
+  crearsitio: Sitio = new Sitio();
 
   constructor(
     private crearsitioServicio: ListsitioService,
@@ -21,6 +21,7 @@ export class SitioCrearComponent {
   guardarsitio() {
     this.crearsitioServicio.Agregarsitio(this.crearsitio).subscribe({
       next: (datos) => {
+        
         this.irsitios();
       },
       error: (error: any) => {
